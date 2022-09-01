@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: #F4C881;
+    background-color: #4a1f1b;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,7 +18,7 @@ body {
 }
 header {
     top: 0;
-    background-color: #651104;
+    background-color: #4a1f1b;
     opacity: 90%;
     text-align: center;
     width: 100vw;
@@ -42,7 +42,7 @@ header {
 }
 .mm_line{
     height:3px;
-    background-color: #F4C881;
+    background-color: #daa520;
     transition: .3s;
 }
 .menus {
@@ -61,14 +61,14 @@ nav h1 {
     font-family: 'Great Vibes', cursive;
     font-size: 35px;
     font-weight: bold;
-    color: #FBF4D9;
+    color: #daa520;
     margin-left: 1vh;
     opacity: 100%;
     margin: 0;
     padding-left: 1vh;
 }
 nav a {
-    color: #FBF4D9;
+    color: #daa520;
     text-decoration: none;
     margin: 0px 10px;
     font-size: 1.2em;
@@ -89,7 +89,7 @@ nav li {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: #FBF4D9 2px solid;
+    border-right: #E36054 2px solid;
     height: 24px;
     opacity: 90%;
 }
@@ -105,7 +105,7 @@ section {
 #home {
     margin-top: 48px;
     width: 100%;
-    background-image: linear-gradient(#F4C881 70%,#BA7623);
+    background-color: #2e1210;
 }
 .home {
     max-width: 1140px;
@@ -151,14 +151,14 @@ section {
 }
 #about_us {
     width: 100vw;
-    background-image: linear-gradient(#BA7623 70%,#F4C881);
+    background-color: #d1a988;
 }
 .about_us {
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 1140px;
-    padding-top: 5vh;
+    padding: 5vh 0;
 }
 .about_us img {
     max-width: 50%;
@@ -168,24 +168,41 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #FBF4D9;
+    color: #3d251e;
     padding: 0px 20px;
 }
 .description p {
     text-align: center;
     flex-wrap: wrap;
     line-height: 2.3vh;
+    color: #5b3e31;
 }
 #products {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    background-image: linear-gradient(#F4C881 70%,#BA7623);
+    background-color: #2e1210;
     padding-top: 48px;
+    padding-bottom: calc(48px + 5vh);
+}
+.title_products h3 {
+    text-align: end;
+    margin: 0;
+    padding: 0;
+    color: #daa520;
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+}
+.title_products {
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    justify-content: end;
+    padding: 0 3vh;
 }
 .grid-area-products {
     max-width: 1140px;
     width: 100%;
-    padding-top: 5vh;
     display: grid;
     grid-template-areas: 
     "grid-item-1 grid-item-2 grid-item-4" 
@@ -224,14 +241,19 @@ section {
     object-fit: fill;
 }
 #testimony {
-    background-image: linear-gradient(#BA7623 60%,#F4C881);
+    background-color: #ecd4b0;
 }
 .testimony {
     max-width: 1140px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 48px;
+    padding: 48px 0;
+}
+.testimony h3 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    margin-bottom: 0;
 }
 .testimony-1 {
     display: flex;
@@ -239,13 +261,17 @@ section {
 }
 .testimony-text {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     line-height: 2.3vh;
-    color: #FBF4D9;
+    color: #3d251e;
     flex: 1;
     padding: 1vh;
+}
+.testimony-text img:nth-child(3) {
+    transform: rotate(180deg);
 }
 .testimony-img {
     flex: 1;
@@ -274,7 +300,7 @@ section {
     height: 100%;
 }
 #contact {
-    background-image: linear-gradient(#F4C881 70%,#BA7623);
+    background-color: #000000;
     padding-top: 48px;
 }
 .contact {
@@ -295,7 +321,7 @@ section {
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-start;
-    color: #651104;
+    color: #E36054;
 }
 .contact-item a{
     display: flex;
@@ -304,18 +330,21 @@ section {
     flex-direction: row;
     margin-bottom: 15px;
     text-decoration: none;
-    color: #651104;
+    color: #E36054;
     line-height: 2.5vh;
 }
 .contact-item svg {
     margin-right: 15px;
 }
+.contact h3 {
+    color: #E36054;
+}
 footer {
     display: flex;  
     width: 100%;
-    background-color: #BA7623;
+    background-color: #0c0c0c;
     justify-content: center;
-    border-top: 1px solid #651104;
+    border-top: 1px solid #966965;
 }
 .copyright {
     max-width: 1140px;
@@ -323,8 +352,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
-    color: #FBF4D9;
+    font-size: 0.8rem;
+    color: #E36054;
     text-align: center;
 }
 
@@ -458,8 +487,5 @@ footer {
     }
     h2 {
         margin-bottom: 0;
-    }
-    .contact h3 {
-        color: #651104;
     }
 }
