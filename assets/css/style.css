@@ -498,4 +498,7 @@ footer {
     h2 {
         margin-bottom: 0;
     }
+    .map {
+        margin-top: 30px;
+    }
 }
