@@ -161,7 +161,7 @@ section {
     padding: 5vh 0;
 }
 .about_us img {
-    max-width: 50%;
+    max-width: 40%;
     height: auto;
 }
 .description {
@@ -254,6 +254,7 @@ section {
     font-family: 'Great Vibes', cursive;
     font-size: 40px;
     margin-bottom: 0;
+    color:#3d251e;
 }
 .testimony-1 {
     display: flex;
@@ -333,10 +334,20 @@ section {
     color: #E36054;
     line-height: 2.5vh;
 }
+.contact-item {
+    display: flex;
+    align-items: center;
+}
 .contact-item svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+}
+.contact-item img {
     margin-right: 15px;
 }
 .contact h3 {
+    font-size: 30px;
     color: #E36054;
 }
 footer {
@@ -366,7 +377,6 @@ footer {
     .contact-area {
         align-items: center;
         justify-content: flex-start;
-        color: #FFF;
     }
     #about_us {
         width: 100%;
@@ -464,7 +474,7 @@ footer {
         object-fit: fill;
     }
     .about_us img {
-        max-width: 70vw;
+        max-width: 80vw;
         padding-left: 3vh;
     }
     .grid-area-products {
@@ -480,7 +490,7 @@ footer {
     }
     .description p,
     .testimony-text p {
-        line-height: 3vh;
+        line-height: 120%;
     }
     .testimony-1, .testimony-2 {
         flex-direction: column;
