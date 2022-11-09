@@ -367,6 +367,10 @@ footer {
     color: #E36054;
     text-align: center;
 }
+.copyright a{
+    color: #E36054;
+    font-size: 0.8rem;
+}
 
 @media (max-width:1140px) {
     .contact {
@@ -497,8 +501,5 @@ footer {
     }
     h2 {
         margin-bottom: 0;
-    }
-    .map {
-        margin-top: 30px;
     }
 }
